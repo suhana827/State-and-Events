@@ -1,0 +1,16 @@
+.form-container {
+    text-align: center;
+    margin-top: 10rem;
+    margin-left: 0.56rem;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: darkblue;
+  }
