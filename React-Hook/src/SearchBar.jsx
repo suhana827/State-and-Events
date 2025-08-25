@@ -12,7 +12,7 @@ function SearchBar() {
         setUsers(data);
         setAllUsers(data);
       });
-  }, []);
+  }, []); 
 
   return (
     <>

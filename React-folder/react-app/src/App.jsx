@@ -1,6 +1,6 @@
 // 1. Counter 
 // import React from "react";
-// import Counter from "./State_Events.jsx";  
+// import Counter from "./Counter.jsx";  
 
 
 // function App() {
