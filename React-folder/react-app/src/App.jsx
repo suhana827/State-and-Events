@@ -1,6 +1,6 @@
 // 1. Counter 
 // import React from "react";
-// import Counter from "./Counter.jsx";  
+// import Counter from "./Counter/Counter.jsx";  
 
 
 // function App() {
@@ -17,7 +17,7 @@
 
 // 2. Form 
 // import React from "react";
-// import Form from "./Form";   // importing Form component
+// import Form from "./LiveTextInput/Form.jsx";  
 
 // function App() {
 //   return (
@@ -36,7 +36,7 @@
 // 3. To-do List 
 
 // import React from "react";
-// import TodoList from "./TodoList";
+// import TodoList from "./Todo-list/TodoList";
 
 // function App() {
 //   return (
@@ -47,3 +47,26 @@
 // }
 
 // export default App;
+
+
+
+
+
+
+// 4.NoteTaker 
+
+import Notes from './Notetaker/Save-Notes.jsx';
+
+function App() {
+  return (
+    <div>
+      <Notes />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
