@@ -50,23 +50,19 @@
 
 
 
+// 4. Theme.jsx 
+
+// import ThemeToggle from "./Toggle/Theme";
+
+// function App () {
+
+//   return(
+//     <div>
+//       <ThemeToggle/>
+//     </div>
+//   )
+// }
 
 
-
-// 4.NoteTaker 
-
-import Notes from './Notetaker/Save-Notes.jsx';
-
-function App() {
-  return (
-    <div>
-      <Notes />
-    </div>
-  );
-}
-
-export default App;
-
-
-
+// export default App;
 
