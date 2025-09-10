@@ -52,17 +52,17 @@
 
 // 4. Theme.jsx 
 
-// import ThemeToggle from "./Toggle/Theme";
+import ThemeToggle from "./Toggle/Theme";
 
-// function App () {
+function App () {
 
-//   return(
-//     <div>
-//       <ThemeToggle/>
-//     </div>
-//   )
-// }
+  return(
+    <div>
+      <ThemeToggle/>
+    </div>
+  )
+}
 
 
-// export default App;
+export default App;
 
