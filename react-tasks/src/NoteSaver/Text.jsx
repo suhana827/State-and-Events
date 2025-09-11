@@ -10,33 +10,49 @@ function Text() {
     inputRef.current.focus();
   }, []);
 
+
   function AddNotes() {
-    const timestamp = new Date().toLocaleTimeString();
+    if (current.trim() === "") {
+      return;
+    }
+
+    const timestamp = new Date().toLocaleString();
     const newNote = { text: current, time: timestamp };
     setNotes([...notes, newNote]);
     setCurrent("");
   }
 
+  function handleDeleteNote(indexToDelete){
+     const updatedNotes = notes.filter((_, index) => index !== indexToDelete);
+     setNotes(updatedNotes);
+  }
+
   return (
-    <div>
-      <textarea
-        ref={inputRef}
-        value={current}
-        onChange={(e) => setCurrent(e.target.value)}
-        placeholder="Type here..."
-      />
+    <>
+      <h1>Note Taker</h1>
+      <div className="input-section">
+        <textarea
+          ref={inputRef}
+          value={current}
+          onChange={(e) => setCurrent(e.target.value)}
+          placeholder="Type here..."
+        />
 
-      <button onClick={AddNotes}>Add Notes</button>
+        <button onClick={AddNotes}>Add Notes</button>
 
-      <div className="notes-container">
-        {notes.map((note, index) => (
-          <div key={index} className="note">
-            <p>{note.time}</p>
-            <p>{note.text}</p>
-          </div>
-        ))}
+        <div className="notes-container">
+          {notes.map((note, index) => (
+            <div key={index} className="note">
+              <p className="note-time">{note.time}</p>
+              <p className="note-next">{note.text}</p>
+              <button className="delete-button" 
+              onClick={()=>handleDeleteNote(index)}>
+              Delete</button>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
